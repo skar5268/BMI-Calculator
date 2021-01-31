@@ -115,6 +115,7 @@ resetBtn.addEventListener('click', function (e) {
     document.getElementById('inputHeight').value = '';
     document.getElementById('inputWeight').value = '';
     document.querySelector('.rank').textContent = '';
+    
 
     resultImg.setAttribute('class', 'd-none')
     calBtn.setAttribute('class', 'calBtn')
@@ -159,7 +160,8 @@ function resultColor(color) {
 
     resultRank.style['color'] = color
     resetBtn.style['background'] = color;
+    resetBtn.style['border-color'] = color;
     resultImg.style['border-color'] = color;
     resultImg.style['color'] = color;
-
+    
 }
